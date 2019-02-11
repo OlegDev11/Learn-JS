@@ -69,7 +69,7 @@
       <body onload="timer()">
          <h3>Таймеры</h3>
          До взрыва осталось 60 секунд <span id = "count">-1</span>
-         
+
             <h3>События и обработка событий</h3>
              <!--Создание кнопки -->
            <input type="button" name="b" value="ClickMe" onclick="buttonClick (this)"/>
@@ -104,6 +104,56 @@
              </form>
 
           <script>
+          // ООП (Маь. операции)
+            document.write("<h3>OOП Мат. операции</h3>")
+             var text = "Число PI- " + Math.PI;
+             text += "\nЧисло E- " + Math.E;
+             text += "\nСинус 0.3- " + Math.sin(0.3);
+             text += "\nМодуль 7- " + Math.abs(-7);
+             text += "\nСлучайное число- " + Math.random();
+             text += "\nСучайное число от 0 до 10 =  " + Math.floor(Math.random() * 11);
+           //alert(text);
+
+          // ООП Функции Дата и Время
+          document.write("<h3>OOП Функции Дата и Время</h3>")
+           var date = new Date();
+           text =  "Год сейчас- " + date.getFullYear();
+           text += "\nМесяц сейчас- " + date.getMonth();
+           text += "\nДень сейчас- " + date.getDate();
+           text += "\nЧасов сейчас- " + date.getHours();
+           text += "\nМинут сейчас- " + date.getMinutes();
+           text += "\nСекунд сейчас- " + date.getSeconds();
+         //alert(text);
+
+          //Устанавливаем Дату и Время
+           var date = new Date(2000, 0, 12, 14, 23, 43);
+           date.setMinutes(50);
+           text =  "Год сейчас- " + date.getFullYear();
+           text += "\nМесяц сейчас- " + date.getMonth();
+           text += "\nДень сейчас- " + date.getDate();
+           text += "\nЧасов сейчас- " + date.getHours();
+           text += "\nМинут сейчас- " + date.getMinutes();
+           text += "\nСекунд сейчас- " + date.getSeconds();
+          //alert(text);
+
+          //ООП Функции Массивы
+            document.write("<h3>OOП Функции Массивы</h3>")
+            var arr = new Array ("Вася", "Олег", "Саша", "Алёна", "Гена", "Наташа", "Таня")
+            text += "Длина массива из- " + arr.length;
+            text += "\nМассив состоит из- " + arr.join(", ");
+            text += "\nСортированый массив по алфавиту- " + (arr.sort()).join(", ");
+          //alert(text)
+
+          //ООП Функции. Строковые операции
+            document.write("<h3>OOП Функции. Строковые операции</h3>")
+            var string = "Небольшая строка";
+            var text = "Длина строки равна- " + string.length;
+            text += "\nСтрока в верхнем регистре- " + string.toUpperCase();
+            text += "\nСтрока в нижнем рег- " + string.toLowerCase();
+            text += "\nОбрезанная строка- " + string.substring(0, 5);
+            text += "\n3-й символ это- " + string.charAt(3);
+            text += "\n'Стро'начинается с индекса- " + string.indexOf("стро");
+          alert(text);
 
           // типы данных
          document.write("<h3>Отработка примитивных типов данных</h3>")
